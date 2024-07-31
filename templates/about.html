@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Love+Ya+Like+A+Sister&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <header style="background: url('{{ url_for('static', filename='Header.png') }}') no-repeat center center; background-size: cover; height: 260px;">
+        <img src="{{ url_for('static', filename='nameHeading.png') }}" alt="Nahfila Ali" class="header-image">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ url_for('home') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='home-button.png') }}" alt="Home" class="nav-button"
+                             data-hover="{{ url_for('static', filename='home-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='home-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='about-button.png') }}" alt="About Me" class="nav-button"
+                             data-hover="{{ url_for('static', filename='about-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='about-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('resume') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='resume-button.png') }}" alt="Resume" class="nav-button"
+                             data-hover="{{ url_for('static', filename='resume-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='resume-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='contact-button.png') }}" alt="Contact" class="nav-button"
+                             data-hover="{{ url_for('static', filename='contact-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='contact-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('art') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='my-art-button.png') }}" alt="My Art" class="nav-button"
+                             data-hover="{{ url_for('static', filename='my-art-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='my-art-button.png') }}">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-me-text"> 
+            <h1>About Me</h1>
+            <p>Throughout my academic journey at Hunter College, I immersed myself in various subjects such as data structures, algorithms, computer architecture, and big data technology, which laid a robust foundation for my career in software engineering.</p>
+            <p>I had the opportunity to intern at American Express twice, where I began to pick up skills in software development and data security. During my first internship, I collaborated with a team to work on a functional GraphQL model demonstrating authentication and authorization principles, which was successfully presented to company leaders and stakeholders. My second internship involved working on a much larger team to help refurbish the American Express partner portal, focusing on code implementation, validations, and security checks.</p>
+            <p>Beyond my professional experiences, I am deeply committed to community service. As a volunteer and Communications Assistant for Forging Opportunities for Refugees in America (FORA), I tutored refugee children in English and mathematics, authored awareness articles, and contributed over 180 hours of dedicated service, earning the Silver Presidential Service Award.</p>
+            <p>My technical skills include a diverse range of programming languages such as Python, C++, SQL, and JavaScript, along with proficiency in web development using HTML and CSS. I am adept at using frameworks like React and Node.js, and tools like Git, Docker, and Visual Studio Code.</p>
+            <p>In my projects, I've developed a VR application using Unity and a CLI-based social media application in C++, demonstrating my ability to create innovative solutions. Additionally, my work with big data technologies, including PySpark and MongoDB, showcases my capability to handle and analyze large datasets effectively.</p>
+            <p>I am passionate about leveraging technology to solve real-world problems and am always eager to learn and take on new challenges. Thank you for visiting my website!</p>
+        </div>
+    </main>
+</body>
+</html>

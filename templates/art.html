@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <header style="background: url('{{ url_for('static', filename='Header.png') }}') no-repeat center center; background-size: cover; height: 260px;">
+        <img src="{{ url_for('static', filename='nameHeading.png') }}" alt="Nahfila Ali" class="header-image">
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ url_for('home') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='home-button.png') }}" alt="Home" class="nav-button"
+                             data-hover="{{ url_for('static', filename='home-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='home-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='about-button.png') }}" alt="About Me" class="nav-button"
+                             data-hover="{{ url_for('static', filename='about-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='about-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('resume') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='resume-button.png') }}" alt="Resume" class="nav-button"
+                             data-hover="{{ url_for('static', filename='resume-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='resume-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='contact-button.png') }}" alt="Contact" class="nav-button"
+                             data-hover="{{ url_for('static', filename='contact-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='contact-button.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('art') }}" class="nav-link">
+                        <img src="{{ url_for('static', filename='my-art-button.png') }}" alt="My Art" class="nav-button"
+                             data-hover="{{ url_for('static', filename='my-art-button-hover.png') }}"
+                             data-original="{{ url_for('static', filename='my-art-button.png') }}">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <p>my art.</p>
+    </main>
+</body>
+</html>
