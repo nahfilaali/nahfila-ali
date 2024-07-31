@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Love+Ya+Like+A+Sister&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <script src="static/script.js" defer></script>
 </head>
 <body>
-    <header style="background: url('{{ url_for('static', filename='Header.png') }}') no-repeat center center; background-size: cover; height: 260px;">
-        <img src="{{ url_for('static', filename='nameHeading.png') }}" alt="Nahfila Ali" class="header-image">
+    <header style="background: url('static/Header.png') no-repeat center center; background-size: cover; height: 300px;">
+        <img src="static/nameHeading.png" alt="Nahfila Ali" class="header-image">
         <nav>
             <ul>
                 <li>
-                    <a href="{{ url_for('home') }}" class="nav-link">
-                        <img src="{{ url_for('static', filename='home-button.png') }}" alt="Home" class="nav-button"
-                             data-hover="{{ url_for('static', filename='home-button-hover.png') }}"
-                             data-original="{{ url_for('static', filename='home-button.png') }}">
+                    <a href="index.html" class="nav-link">
+                        <img src="static/home-button.png" alt="Home" class="nav-button"
+                             data-hover="static/home-button-hover.png"
+                             data-original="static/home-button.png">
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('about') }}" class="nav-link">
-                        <img src="{{ url_for('static', filename='about-button.png') }}" alt="About Me" class="nav-button"
-                             data-hover="{{ url_for('static', filename='about-button-hover.png') }}"
-                             data-original="{{ url_for('static', filename='about-button.png') }}">
+                    <a href="about.html" class="nav-link">
+                        <img src="static/about-button.png" alt="About Me" class="nav-button"
+                             data-hover="static/about-button-hover.png"
+                             data-original="static/about-button.png">
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('resume') }}" class="nav-link">
-                        <img src="{{ url_for('static', filename='resume-button.png') }}" alt="Resume" class="nav-button"
-                             data-hover="{{ url_for('static', filename='resume-button-hover.png') }}"
-                             data-original="{{ url_for('static', filename='resume-button.png') }}">
+                    <a href="resume.html" class="nav-link">
+                        <img src="static/resume-button.png" alt="Resume" class="nav-button"
+                             data-hover="static/resume-button-hover.png"
+                             data-original="static/resume-button.png">
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('contact') }}" class="nav-link">
-                        <img src="{{ url_for('static', filename='contact-button.png') }}" alt="Contact" class="nav-button"
-                             data-hover="{{ url_for('static', filename='contact-button-hover.png') }}"
-                             data-original="{{ url_for('static', filename='contact-button.png') }}">
+                    <a href="contact.html" class="nav-link">
+                        <img src="static/contact-button.png" alt="Contact" class="nav-button"
+                             data-hover="static/contact-button-hover.png"
+                             data-original="static/contact-button.png">
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url_for('art') }}" class="nav-link">
-                        <img src="{{ url_for('static', filename='my-art-button.png') }}" alt="My Art" class="nav-button"
-                             data-hover="{{ url_for('static', filename='my-art-button-hover.png') }}"
-                             data-original="{{ url_for('static', filename='my-art-button.png') }}">
+                    <a href="art.html" class="nav-link">
+                        <img src="static/my-art-button.png" alt="My Art" class="nav-button"
+                             data-hover="static/my-art-button-hover.png"
+                             data-original="static/my-art-button.png">
                     </a>
                 </li>
             </ul>
@@ -55,7 +55,7 @@
         <section class="intro"> 
             <div class="intro-content">
                 <div class="intro-image">
-                    <img src="{{ url_for('static', filename='ice-cream-girl.png') }}" alt="Ice Cream Girl">
+                    <img src="static/ice-cream-girl.png" alt="Ice Cream Girl">
                 </div>
                 <div class="intro-text">
                     <h1>Welcome to My Website!</h1>
