@@ -15,12 +15,14 @@ a, button {
 a {
     color: rgb(123, 34, 34); /* Change to desired color */
     text-decoration: none; /* Remove underline */
+    cursor: url('pointer-cursor.png') 32 32, pointer; /* Pointer cursor */
 }
 
 header {
     position: relative;
     color: #fff;
     text-align: center;
+    cursor: url('default-cursor-2.png') 32 32, auto;
 }
 
 .header-image {
@@ -31,6 +33,7 @@ header {
     max-width: 10%; /* Adjust the size as needed */
     height: auto;
     z-index: 1; /* Ensure it is above the background */
+    cursor: url('default-cursor-2.png') 32 32, auto;
 }
 
 nav {
@@ -41,6 +44,7 @@ nav {
     transform: translateX(-50%);
     width: 100%;
     z-index: 1; /* Ensure it is above the background */
+    cursor: url('default-cursor-2.png') 32 32, auto;
 }
 
 nav ul {
