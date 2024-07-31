@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    cursor: url('pointer-cursor.png') 32 32, pointer;
 }
 
 .intro {
