@@ -85,7 +85,7 @@ button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    cursor: url('/static/pointer-cursor.png') 32 32, pointer; /* Pointer cursor */
+    cursor: url('pointer-cursor.png') 32 32, pointer; /* Pointer cursor */
 }
 
 button:hover {
