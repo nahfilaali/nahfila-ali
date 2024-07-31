@@ -144,7 +144,7 @@ button:hover {
 
 .download-button img:hover {
     opacity: 0.8; /* Slight transparency on hover for effect */
-    cursor: url('/static/pointer-cursor.png') 32 32, pointer;
+    cursor: url('pointer-cursor.png') 32 32, pointer;
 }
 
 .about-me-text {
