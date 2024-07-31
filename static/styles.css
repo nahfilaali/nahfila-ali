@@ -139,7 +139,7 @@ button:hover {
 .download-button img {
     width: 150px; /* Adjust the size as needed */
     height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: url('pointer-cursor.png') 32 32, pointer;
 }
 
 .download-button img:hover {
