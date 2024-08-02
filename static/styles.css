@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(154, 173, 105);
-    cursor: url('static/default-cursor-2.png') 32 32, auto; /* Default cursor */
+    cursor: url('static/default-cursor-2.png?v=1') 32 32, auto; /* Default cursor */
 }
 
 /* Pointer cursor for links and buttons */
