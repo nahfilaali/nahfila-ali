@@ -18,9 +18,9 @@ def resume():
 def contact():
     return render_template('contact.html')
 
-@app.route('/art')
+@app.route('/projects')
 def art():
-    return render_template('art.html')
+    return render_template('projects.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
