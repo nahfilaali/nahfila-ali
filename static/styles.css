@@ -1,23 +1,23 @@
-/* Default cursor */
+/* General Body */
 body {
     font-family: 'Love Ya Like A Sister', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(154, 173, 105);
-    cursor: url('static/default-cursor-2.png?v=1') 32 32, auto; /* Default cursor */
+    cursor: url('static/default-cursor-2.png?v=1') 32 32, auto;
 }
 
-/* Pointer cursor for links and buttons */
+/* Link and Button */
 a, button {
-    cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer; /* Pointer cursor */
+    cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer;
 }
 
 a {
-    color: rgb(123, 34, 34); /* Change to desired color */
-    text-decoration: none; /* Remove underline */
-    cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer; /* Pointer cursor */
+    color: rgb(123, 34, 34);
+    text-decoration: none;
 }
 
+/* Header */
 header {
     position: relative;
     color: #fff;
@@ -30,12 +30,13 @@ header {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 10%; /* Adjust the size as needed */
+    max-width: 10%;
     height: auto;
-    z-index: 1; /* Ensure it is above the background */
+    z-index: 1;
     cursor: url('static/default-cursor-2.png?v=1') 32 32, auto;
 }
 
+/* Navigation Bar */
 nav {
     position: absolute;
     bottom: 0px;
@@ -43,15 +44,15 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    z-index: 1; /* Ensure it is above the background */
+    z-index: 1;
     cursor: url('static/default-cursor-2.png?v=1') 32 32, auto;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Use flexbox for inline display */
-    justify-content: center; /* Center the items */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -60,46 +61,50 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block; /* Make the link a block element */
-    text-decoration: none; /* Remove underline from links */
+    display: block;
+    text-decoration: none;
 }
 
+/* Navigation Buttons */
 .nav-button {
-    max-width: 150px; /* Adjust the size as needed */
+    max-width: 150px;
     height: auto;
-    display: block; /* Ensure image is a block element */
+    display: block;
     transition: transform 0.3s ease;
-    pointer-events: auto; /* Ensure pointer events are enabled for buttons */
+    pointer-events: auto;
 }
 
 .nav-button:hover {
-    transform: scale(1.1); /* Scale the image on hover for a visual effect */
+    transform: scale(1.1);
 }
 
+/* Main */
 main {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the start (top) */
+    align-items: flex-start;
     padding: 1rem;
     text-align: center;
-    height: calc(100vh - 260px); /* Optional: Adjust height based on header size */
+    height: calc(100vh - 260px);
 }
 
+/* Buttons */
 button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer; /* Pointer cursor */
+    cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer;
 }
 
 button:hover {
     cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer;
 }
 
+/* Introduction */
 .intro {
-    max-width: 800px; /* Adjust this value to control the width */
-    margin: auto; /* Center the text block */
-    padding: 0.5rem; /* Add some padding */
+    max-width: 800px;
+    margin: auto;
+    padding: 0.5rem;
     padding-bottom: 4rem;
 }
 
@@ -111,8 +116,8 @@ button:hover {
 
 .intro-text {
     flex: 1;
-    margin-right: 1rem; /* Space between text and image */
-    text-align: justify; /* Optional: Justify the text for a cleaner look */
+    margin-right: 1rem;
+    text-align: justify;
     color: rgb(33, 41, 20);
 }
 
@@ -121,46 +126,53 @@ button:hover {
 }
 
 .intro-image img {
-    max-width: 65%; /* Make sure the image fits within the container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 65%;
+    height: auto;
 }
 
+
+/* RESUME */
+
+/* PDF Container */
 .pdf-container {
-    padding-bottom: 20px; /* Add padding at the bottom */
-    text-align: center; /* Center the iframe horizontally */
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .pdf-container iframe {
-    width: 900px; /* Set a fixed width */
-    height: 1175px; /* Set a fixed height */
-    border: none; /* Optional: remove border */
+    width: 900px;
+    height: 1175px;
+    border: none;
 }
 
+/* Download Button */
 .download-button {
-    margin-top: 20px; /* Add some space above the button */
+    margin-top: 20px;
 }
 
 .download-button img {
-    width: 150px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
     cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer;
 }
 
 .download-button img:hover {
-    opacity: 0.8; /* Slight transparency on hover for effect */
+    opacity: 0.8;
     cursor: url('static/pointer-cursor.png?v=1') 32 32, pointer;
 }
 
+/* ABOUT ME */
 .about-me-text {
     font-family: 'Love Ya Like A Sister', sans-serif;
     color: rgb(33, 41, 20);
-    max-width: 600px; /* Adjust the width as needed to make it more vertically rectangular */
-    margin: 0 auto; /* Center the text horizontally */
+    max-width: 600px;
+    margin: 0 auto;
     padding-bottom: 3rem;
-    text-align: left; /* Keep the text aligned to the left for readability */
-    line-height: 1.6; /* Increase line height for better readability */
+    text-align: left;
+    line-height: 1.6;
 }
 
+/* CONTACT */
 .contact-header {
     font-family: 'Love Ya Like A Sister', sans-serif;
     font-size: 3rem;
@@ -174,80 +186,84 @@ button:hover {
     color: rgb(33, 41, 20);
 }
 
-.wordcraft-image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images in the container */
-    align-items: center; /* Align images vertically */
-    margin-bottom: 3%;
-    gap: 1%; /* No space between the images */
-}
-
-.wordcraft-image-gallery img {
-    max-width: 15%; 
-    height: auto; 
-    margin: 0; /* Ensure no margin around images */
-    padding: 0; /* Ensure no padding around images */
-    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition for the hover effect */
-    transform-origin: center center; /* Ensures the image expands from the center */
-    z-index: 0; /* Ensures images are on the same level */
-}
-
-.wordcraft-image-gallery img:hover {
-    transform: scale(2.0); /* Expands the image to 150% of its original size */
-    z-index: 10; /* Brings the hovered image to the front */
+/* Wordcraft Section */
+.word-craft {
+    background: rgb(170, 185, 128);
+    margin: 0 auto 40px auto;
+    padding: 1%;
+    width: 70%;
+    box-sizing: border-box;
 }
 
 .word-craft p {
-    margin-left: 5%;    
-    margin-right: 5%;   
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: large;
-    color:rgb(35, 55, 17);
+    color: rgb(35, 55, 17);
 }
 
-.word-craft {
-    background: rgb(170, 185, 128); /* Set background color */
-    margin: 0 auto 40px auto; /* Center the section horizontally and add bottom margin */
-    padding: 1%; /* Add some padding to give space inside the section */
-    width: 70%; /* Control the width of the section */
-    box-sizing: border-box; /* Include padding and border in the element's width and height */
+/* Wordcraft Image Gallery */
+.wordcraft-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    gap: 1%;
 }
 
+.wordcraft-image-gallery img {
+    max-width: 15%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    transform-origin: center center;
+    z-index: 0;
+}
+
+.wordcraft-image-gallery img:hover {
+    transform: scale(2.0);
+    z-index: 10;
+}
+
+/* VR Project Section */
 .vr-project {
-    background: rgb(170, 185, 128); /* Set background color */
-    margin: 0 auto 40px auto; /* Center the section horizontally and add bottom margin */
-    padding: 1%; /* Add some padding to give space inside the section */
-    width: 70%; /* Control the width of the section */
-    box-sizing: border-box; /* Include padding and border in the element's width and height */
+    background: rgb(170, 185, 128);
+    margin: 0 auto 40px auto;
+    padding: 1%;
+    width: 70%;
+    box-sizing: border-box;
 }
 
 .vr-project p {
-    margin-left: 5%;    
-    margin-right: 5%;   
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: large;
-    color:rgb(35, 55, 17);
+    color: rgb(35, 55, 17);
 }
 
+/* VR Project Image Gallery */
 .vrp-image-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the images in the container */
-    align-items: center; /* Align images vertically */
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3%;
-    gap: 1%; /* No space between the images */
+    gap: 1%;
 }
 
 .vrp-image-gallery img {
-    max-width: 40%; 
-    height: auto; 
-    margin: 0; /* Ensure no margin around images */
-    padding: 0; /* Ensure no padding around images */
-    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition for the hover effect */
-    transform-origin: center center; /* Ensures the image expands from the center */
-    z-index: 0; /* Ensures images are on the same level */
+    max-width: 40%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    transform-origin: center center;
+    z-index: 0;
 }
 
 .vrp-image-gallery img:hover {
-    transform: scale(2.0); /* Expands the image to 150% of its original size */
-    z-index: 10; /* Brings the hovered image to the front */
+    transform: scale(2.0);
+    z-index: 10;
 }
