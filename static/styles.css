@@ -173,3 +173,81 @@ button:hover {
     font-size: 1.5rem;
     color: rgb(33, 41, 20);
 }
+
+.wordcraft-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images in the container */
+    align-items: center; /* Align images vertically */
+    margin-bottom: 3%;
+    gap: 1%; /* No space between the images */
+}
+
+.wordcraft-image-gallery img {
+    max-width: 15%; 
+    height: auto; 
+    margin: 0; /* Ensure no margin around images */
+    padding: 0; /* Ensure no padding around images */
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition for the hover effect */
+    transform-origin: center center; /* Ensures the image expands from the center */
+    z-index: 0; /* Ensures images are on the same level */
+}
+
+.wordcraft-image-gallery img:hover {
+    transform: scale(2.0); /* Expands the image to 150% of its original size */
+    z-index: 10; /* Brings the hovered image to the front */
+}
+
+.word-craft p {
+    margin-left: 5%;    
+    margin-right: 5%;   
+    font-size: large;
+    color:rgb(35, 55, 17);
+}
+
+.word-craft {
+    background: rgb(170, 185, 128); /* Set background color */
+    margin: 0 auto 40px auto; /* Center the section horizontally and add bottom margin */
+    padding: 1%; /* Add some padding to give space inside the section */
+    width: 70%; /* Control the width of the section */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.vr-project {
+    background: rgb(170, 185, 128); /* Set background color */
+    margin: 0 auto 40px auto; /* Center the section horizontally and add bottom margin */
+    padding: 1%; /* Add some padding to give space inside the section */
+    width: 70%; /* Control the width of the section */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.vr-project p {
+    margin-left: 5%;    
+    margin-right: 5%;   
+    font-size: large;
+    color:rgb(35, 55, 17);
+}
+
+.vrp-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images in the container */
+    align-items: center; /* Align images vertically */
+    margin-bottom: 3%;
+    gap: 1%; /* No space between the images */
+}
+
+.vrp-image-gallery img {
+    max-width: 40%; 
+    height: auto; 
+    margin: 0; /* Ensure no margin around images */
+    padding: 0; /* Ensure no padding around images */
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth transition for the hover effect */
+    transform-origin: center center; /* Ensures the image expands from the center */
+    z-index: 0; /* Ensures images are on the same level */
+}
+
+.vrp-image-gallery img:hover {
+    transform: scale(2.0); /* Expands the image to 150% of its original size */
+    z-index: 10; /* Brings the hovered image to the front */
+}
