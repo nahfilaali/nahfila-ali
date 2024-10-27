@@ -116,7 +116,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 0; /* Adjust to change the spacing between the text and image */
+    gap: 0; 
 }
 
 .intro-text {
@@ -131,6 +131,7 @@ button:hover {
     background: rgb(159, 173, 119, 0.8);
     padding-left: 5%;
     padding-right: 5%;
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 .intro-image {
@@ -199,6 +200,7 @@ button:hover {
     padding-right: 5%; 
     padding-left: 5%;
     padding-bottom: 5%;
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 .contact-header {
@@ -234,6 +236,7 @@ button:hover {
     margin-right: 5%;
     font-size: large;
     color: rgb(35, 55, 17);
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 /* Wordcraft Image Gallery */
@@ -275,6 +278,7 @@ button:hover {
     margin-right: 5%;
     font-size: large;
     color: rgb(35, 55, 17);
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 /* VR Project Image Gallery */
@@ -316,6 +320,7 @@ button:hover {
     margin-right: 5%;
     font-size: large;
     color: rgb(35, 55, 17);
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 /* Weather Project Image Gallery */
@@ -357,6 +362,7 @@ button:hover {
     margin-right: 5%;
     font-size: large;
     color: rgb(35, 55, 17);
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 /* Pomodoro Image Gallery */
@@ -408,6 +414,7 @@ button:hover {
     margin-right: 5%;
     font-size: large;
     color: rgb(35, 55, 17);
+    cursor: url('text-cursor.png') 32 32, pointer;
 }
 
 /* Website Image Gallery */
