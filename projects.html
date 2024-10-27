@@ -7,50 +7,11 @@
     <link rel="stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Love+Ya+Like+A+Sister&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="static/script.js" defer></script>
+
 </head>
 <body>
-    <header style="background: url('static/Header.png') no-repeat center center; background-size: cover; height: 260px;">
-        <img src="static/nameHeading.png" alt="Nahfila Ali" class="header-image">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="nav-link">
-                        <img src="static/home-button.png" alt="Home" class="nav-button"
-                             data-hover="static/home-button-hover.png"
-                             data-original="static/home-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html" class="nav-link">
-                        <img src="static/about-button.png" alt="About Me" class="nav-button"
-                             data-hover="static/about-button-hover.png"
-                             data-original="static/about-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="resume.html" class="nav-link">
-                        <img src="static/resume-button.png" alt="Resume" class="nav-button"
-                             data-hover="static/resume-button-hover.png"
-                             data-original="static/resume-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-link">
-                        <img src="static/contact-button.png" alt="Contact" class="nav-button"
-                             data-hover="static/contact-button-hover.png"
-                             data-original="static/contact-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="projects.html" class="nav-link">
-                        <img src="static/my-projects-button.png" alt="My Projects" class="nav-button"
-                             data-hover="static/my-projects-button-hover.png"
-                             data-original="static/my-projects-button.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>  
+    {% include 'header.html' %}
+    
     <main>
         <section class="project-feed">
             <section class="word-craft">
@@ -80,6 +41,37 @@
                     <img src="static/VRP4.png" alt="VRP Image 4">
                     <img src="static/VRP7.png" alt="VRP Image 7">
                     <img src="static/VRP5.png" alt="VRP Image 5">
+                </div>
+            </section>
+            <section class="weather-project">
+                <h2>Weather Application Project</h2>
+                <p>This was a group effort to develop a Weather App using the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a>, delivering real-time and forecasted weather data for global locations. Working as a full-stack developer, I primarily focused on front-end features to create a seamless and interactive user experience, allowing users to view current and five-day forecasts and quickly access previously searched cities. This project provided hands-on experience with high-demand applications and strengthened my skills in user-centered design, API integration, and creating responsive, user-friendly interfaces.</p>
+                <p style="color:rgb(76, 84, 46)">This application uses <span style="color:rgb(95, 53, 53)">Node.js</span> and <span style="color:rgb(95, 53, 53)">Express.js</span> for the backend, <span style="color:rgb(95, 53, 53)">MongoDB</span> for data persistence, <span style="color:rgb(95, 53, 53)">React.js</span> and <span style="color:rgb(95, 53, 53)">CSS</span> for the frontend, and the <span style="color:rgb(95, 53, 53)">OpenWeatherMap API</span> to deliver real-time weather data.</p>
+                <p style="color:rgb(76, 84, 46)">You can view the source for this project on GitHub: <a href="https://github.com/Tabshir2003/Weather-App" target="_blank">https://github.com/Tabshir2003/Weather-App</a></p>
+                <div class="weather-image-gallery">
+                    <img src="static/weather-1.png" alt="Weather Image 1">
+                    <img src="static/weather-2.png" alt="Weather Image 2">
+                </div>
+            </section>
+            <section class="pomodoro">
+                <h2>Pomodoro Timer Study App</h2>
+                <p>In my final semester’s capstone project, our team developed a Pomodoro timer-based study app designed to improve study efficiency through timed sessions. The main feature is a Pomodoro timer that users can run while studying, along with tools to track assignments and tasks. I served as a full-stack developer, primarily responsible for designing and implementing the authentication system using JSON Web Tokens (JWTs) to secure user logins. This involved setting up user registration with bcrypt-hashed passwords and using a pre-save hook for added security. I also gained experience in backend functionality with JavaScript, strengthening my skills in user authentication and database interactions.</p>
+                <p style="color:rgb(76, 84, 46)">This application uses <span style="color:rgb(95, 53, 53)">Node.js</span> and <span style="color:rgb(95, 53, 53)">Express.js</span> for the backend, <span style="color:rgb(95, 53, 53)">MongoDB</span> for data persistence, <span style="color:rgb(95, 53, 53)">React.js</span>, <span style="color:rgb(95, 53, 53)">CSS</span>, and <span style="color:rgb(95, 53, 53)">Web3D</span> for the frontend, and <span style="color:rgb(95, 53, 53)">JWT</span> for secure user authentication.</p>
+                <p style="color:rgb(76, 84, 46)">You can view the source for this project on GitHub: <a href="https://github.com/leylatuon/Pomo" target="_blank">https://github.com/leylatuon/Pomo</a></p>
+                <div class="pomodoro-image-gallery">
+                    <img src="static/pomo-1.png" alt="Pomo Image 1">
+                    <img src="static/pomo-2.png" alt="Pomo Image 2">
+                    <img src="static/pomo-3.png" alt="Pomo Image 3">
+                </div>
+            </section>
+
+            <section class="website">
+                <h2>This Website!</h2>
+                <p>Welcome to my personal website, a project where I brought together my skills in computer science and my passion for art. Built from scratch, this website serves as a portfolio to showcase my projects, skills, and interests. Beyond just functionality, I wanted this site to reflect my unique perspective, so I designed and drew the visual elements myself, from buttons to backgrounds, to give it a distinctive, personal touch. Developed using HTML, CSS, JavaScript, and Flask, my website represents both my technical skill and my creativity, an expression of who I am as a developer and an artist.</p>
+                <p style="color:rgb(76, 84, 46)">This website is built using <span style="color:rgb(95, 53, 53)">HTML</span>, <span style="color:rgb(95, 53, 53)">CSS</span>, and <span style="color:rgb(95, 53, 53)">JavaScript</span> for the frontend, with <span style="color:rgb(95, 53, 53)">Flask</span> as the backend framework.</p>
+                <p style="color:rgb(76, 84, 46)">You can view the source for this project on GitHub: <a href="https://github.com/nahfilaali/nahfila-ali" target="_blank">https://github.com/nahfilaali/nahfila-ali</a></p>
+                <div class="website-image-gallery">
+                    <img src="static/website.png" alt="Website Image 1">
                 </div>
             </section>
         </section>

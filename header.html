@@ -1,0 +1,42 @@
+<header style="background: url('static/Header.png') no-repeat center center; background-size: cover; height: 260px;">
+    <img src="static/nameHeading.png" alt="Nahfila Ali" class="header-image">
+    <nav>
+        <ul>
+            <li>
+                <a href="{{ url_for('home') }}" class="nav-link">
+                    <img src="static/home-button.png" alt="Home" class="nav-button"
+                         data-hover="static/home-button-hover.png"
+                         data-original="static/home-button.png">
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('about') }}" class="nav-link">
+                    <img src="static/about-button.png" alt="About Me" class="nav-button"
+                         data-hover="static/about-button-hover.png"
+                         data-original="static/about-button.png">
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('resume') }}" class="nav-link">
+                    <img src="static/resume-button.png" alt="Resume" class="nav-button"
+                         data-hover="static/resume-button-hover.png"
+                         data-original="static/resume-button.png">
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('contact') }}" class="nav-link">
+                    <img src="static/contact-button.png" alt="Contact" class="nav-button"
+                         data-hover="static/contact-button-hover.png"
+                         data-original="static/contact-button.png">
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('projects') }}" class="nav-link">
+                    <img src="static/projects-button.png" alt="My Projects" class="nav-button"
+                         data-hover="static/projects-button-hover.png"
+                         data-original="static/projects-button.png">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

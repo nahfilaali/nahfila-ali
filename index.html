@@ -9,48 +9,8 @@
     <script src="static/script.js" defer></script>
 </head>
 <body>
-    <header style="background: url('static/Header.png') no-repeat center center; background-size: cover; height: 260px;">
-        <img src="static/nameHeading.png" alt="Nahfila Ali" class="header-image">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="nav-link">
-                        <img src="static/home-button.png" alt="Home" class="nav-button"
-                             data-hover="static/home-button-hover.png"
-                             data-original="static/home-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html" class="nav-link">
-                        <img src="static/about-button.png" alt="About Me" class="nav-button"
-                             data-hover="static/about-button-hover.png"
-                             data-original="static/about-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="resume.html" class="nav-link">
-                        <img src="static/resume-button.png" alt="Resume" class="nav-button"
-                             data-hover="static/resume-button-hover.png"
-                             data-original="static/resume-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-link">
-                        <img src="static/contact-button.png" alt="Contact" class="nav-button"
-                             data-hover="static/contact-button-hover.png"
-                             data-original="static/contact-button.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="projects.html" class="nav-link">
-                        <img src="static/my-projects-button.png" alt="My Projects" class="nav-button"
-                             data-hover="static/my-projects-button-hover.png"
-                             data-original="static/my-projects-button.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>    
+    {% include 'header.html' %}
+    
     <main>
         <section class="intro"> 
             <div class="intro-content">
@@ -58,11 +18,10 @@
                     <img src="static/ice-cream-girl.png" alt="Ice Cream Girl">
                 </div>
                 <div class="intro-text">
-                    <h1>Welcome to My Website</h1>
-                    <p>Hello! My name is Nahfila. Welcome to my personal website, where you can explore my drawings and learn more about me.</p>
-                    <p>I have a Bachelor's degree in Computer Science from Hunter College. During my studies, I interned at American Express twice, where I worked on their partner portal and developed a GraphQL model for data security. Additionally, I volunteered with FORA, tutoring refugee children in English and mathematics, and earned the Silver Presidential Service Award.</p>
-                    <p>My technical skills include programming languages such as Python, C++, and SQL, as well as web development with HTML, CSS, and JavaScript. I am passionate about leveraging my skills to create impactful solutions and am always eager to take on new challenges. </p>
-                    <p>Feel free to use the navigation bar to learn more about my work and experiences.</p>
+                    <h1>Welcome to My Website!</h1>
+                    <p>Hello! I'm Nahfila. Welcome to my personal website, where you can explore my drawings and learn more about me.</p> 
+                    <p>I hold a Bachelor's degree in Computer Science from Hunter College. During my studies, I interned at American Express, where I helped revamp an old partner portal and developed a GraphQL model for data security. I also volunteered with FORA, tutoring refugee children, and earned the Silver Presidential Service Award.</p> <p>My skills include Python, C++, SQL, and web development with HTML, CSS, and JavaScript. I'm passionate about using my skills to create impactful solutions and embrace new challenges.</p> 
+                    <p>Feel free to navigate to learn more about my work and experiences.</p>
                 </div>
             </div>
         </section>
