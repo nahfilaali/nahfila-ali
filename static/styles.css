@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(154, 173, 105);
-    cursor: url('default-cursor-2.png') 0 0, auto;
+    cursor: url('default-cursor-2.png') 0 32, auto;
     background-image: url('background-pattern.png'); /* Path to your image */
     background-repeat: repeat; /* Tiles the image */
     background-size: 30%; /* Keeps the original size for each tile */
@@ -13,7 +13,7 @@ body {
 
 /* Link and Button */
 a, button {
-    cursor: url('pointer-cursor.png') 0 0, pointer;
+    cursor: url('pointer-cursor.png') 0 32, pointer;
 }
 
 a {
@@ -26,7 +26,7 @@ header {
     position: relative;
     color: #fff;
     text-align: center;
-    cursor: url('default-cursor-2.png') 0 0, auto;
+    cursor: url('default-cursor-2.png') 0 32, auto;
 }
 
 .header-image {
@@ -37,7 +37,7 @@ header {
     max-width: 13%;
     height: auto;
     z-index: 1;
-    cursor: url('default-cursor-2.png') 0 0, auto;
+    cursor: url('default-cursor-2.png') 0 32, auto;
 }
 
 /* Navigation Bar */
@@ -49,7 +49,7 @@ nav {
     transform: translateX(-50%);
     width: 100%;
     z-index: 1;
-    cursor: url('default-cursor-2.png') 0 0, auto;
+    cursor: url('default-cursor-2.png') 0 32, auto;
 }
 
 nav ul {
@@ -97,11 +97,11 @@ button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    cursor: url('pointer-cursor.png') 0 0, pointer;
+    cursor: url('pointer-cursor.png') 0 32, pointer;
 }
 
 button:hover {
-    cursor: url('pointer-cursor.png') 0 0, pointer;
+    cursor: url('pointer-cursor.png') 0 32, pointer;
 }
 
 /* Introduction */
@@ -169,12 +169,12 @@ button:hover {
 .download-button img {
     width: 150px;
     height: auto;
-    cursor: url('pointer-cursor.png') 0 0, pointer;
+    cursor: url('pointer-cursor.png') 0 32, pointer;
 }
 
 .download-button img:hover {
     opacity: 0.8;
-    cursor: url('pointer-cursor.png') 0 0, pointer;
+    cursor: url('pointer-cursor.png') 0 32, pointer;
 }
 
 /* ABOUT ME */
