@@ -9,7 +9,15 @@
     <script src="static/script.js" defer></script>
 </head>
 <body>
-    {% include 'header.html' %}
+    <div id="header-placeholder"></div>
+        <script>
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        </script>
     
     <main>
         <div class="about-me-text"> 
