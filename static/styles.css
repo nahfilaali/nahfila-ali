@@ -13,7 +13,7 @@ body {
 
 /* Link and Button */
 a, button {
-    cursor: url('pointer-cursor.png') 0 32, pointer;
+    cursor: url('pointer-cursor.png') 0 0, pointer;
 }
 
 a {
@@ -97,11 +97,11 @@ button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    cursor: url('pointer-cursor.png') 0 32, pointer;
+    cursor: url('pointer-cursor.png') 0 0, pointer;
 }
 
 button:hover {
-    cursor: url('pointer-cursor.png') 0 32, pointer;
+    cursor: url('pointer-cursor.png') 0 0, pointer;
 }
 
 /* Introduction */
@@ -169,12 +169,12 @@ button:hover {
 .download-button img {
     width: 150px;
     height: auto;
-    cursor: url('pointer-cursor.png') 0 32, pointer;
+    cursor: url('pointer-cursor.png') 0 0, pointer;
 }
 
 .download-button img:hover {
     opacity: 0.8;
-    cursor: url('pointer-cursor.png') 0 32, pointer;
+    cursor: url('pointer-cursor.png') 0 0, pointer;
 }
 
 /* ABOUT ME */
